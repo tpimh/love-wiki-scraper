@@ -1,0 +1,4 @@
+config.lua
+lib/
+love_api.lua
+scrap/

@@ -134,7 +134,7 @@ local function stripDescription(description)
     -- remove <code> and </code> tags
     description = description:gsub("<code>", ""):gsub("</code>", "")
     -- remove [[...]] and [[...|...]] links
-    description = description:gsub("%[%[([^%]|]+)|?[^%]]*%]%]", "%1")
+    description = description:gsub("%[%[[^%]|]+|([^%]]+)%]%]", "%1")
     return description
 end
 
